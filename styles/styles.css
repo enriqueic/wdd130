@@ -1,13 +1,13 @@
 nav {
     background-color: steelblue;
     padding: 10px;
-  }
+}
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
-  }
+}
   
 h1 {
     color: steelblue;
@@ -22,7 +22,7 @@ img {
 }
 
 p {
-    padding: 0;
+    padding: 10px;
 }
 
 main {
