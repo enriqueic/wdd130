@@ -1,3 +1,21 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 200px;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
 nav {
     background: darkred;
     padding: 0.5rem;
@@ -21,14 +39,12 @@ h1 {
     color: darkred;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid white;
-    padding: 2px;
-    box-shadow: 0 0 30px;
+p {
+    padding: 0;
 }
 
-p {
-    padding: 10px;
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
