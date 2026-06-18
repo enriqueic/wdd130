@@ -183,7 +183,7 @@ section + section {
 
 .adventure {
   display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   align-items: start;
   margin-top: 1rem;
@@ -195,10 +195,6 @@ section + section {
   margin: 0 0 1rem;
 }
 
-.adventure figure {
-  margin: 0;
-}
-
 .adventure img {
   display: block;
   width: 100%;
@@ -206,9 +202,10 @@ section + section {
 }
 
 .adventure figure {
+  margin: 0;
   text-align: center;
   padding: 0.75rem 0.5rem;
-  background: rgba(128, 0, 0, 0.08);
+  background: rgba(128, 0, 0, 0.25);
   border-radius: 0.5rem;
 }
 
