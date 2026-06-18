@@ -52,25 +52,21 @@ body {
 h1,
 h2 {
   font-family: var(--heading-font);
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 nav,
 p,
+section,
 article {
   margin: 16px;
   padding: 8px;
 }
 
-section {
-  margin: 0;
-  padding: 0;
-}
-
 header,
 main,
 footer {
-  max-width: 840px;
+  width: 840px;
   margin: 0 auto;
 }
 
@@ -111,6 +107,11 @@ footer .socialmedia img {
   width: 40px;
   height: auto;
   display: block;
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 section + section {
@@ -248,7 +249,6 @@ section + section {
   padding: 1.5rem;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  margin: 0;
 }
 
 .featured-grid article:hover {
@@ -279,7 +279,6 @@ section + section {
   grid-column: 1 / -1;
   text-align: center;
   margin: 0 0 1rem;
-  background-color: var(--secondary-color);
 }
 
 .adventure figure {
@@ -326,7 +325,6 @@ section + section {
 .history img {
   margin: 0;
   width: 100%;
-  padding: 0;
 }
 
 .site-header {
@@ -421,7 +419,7 @@ main {
   box-shadow: 0 8px 24px rgba(20, 20, 20, 0.06);
   border-radius: 12px;
   padding: 1.25rem;
-  color: var(--secondary-color);
+  color: black;
 }
 
 .contact-form fieldset {
@@ -559,6 +557,7 @@ main {
   color: var(--secondary-color);
 }
 
+/* Trips Page Styles */
 .trips-hero {
   background: linear-gradient(135deg, rgba(128, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('../images/hero.webp');
   background-size: cover;
@@ -697,6 +696,8 @@ main {
   color: var(--secondary-color);
 }
 
+/* Remove the .about-hero section and replace with .hero */
+
 .hero {
   position: relative;
   margin-bottom: 1rem;
@@ -737,16 +738,18 @@ main {
   line-height: 1.5;
 }
 
-#hero-title {
+.hero h1 {
   position: absolute;
   top: 20px;
+  left: 0;
+  right: 0;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
-  margin: 0px;
+  margin: 0;
 }
 
 .index-hero {
