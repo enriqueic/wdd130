@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: beige;
-  --secondary-color: darkgray;
+  --secondary-color: rgb(70, 66, 66);
   --accent1-color: maroon;
   --accent2-color: white;
   --heading-font: "Georgia", "Times New Roman", serif;
@@ -16,6 +16,31 @@
 header {
   background-color: var(--primary-color);
   color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: var(--small-spacing);
+  /* horizontal layout moved to the UL below */
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color)
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 body {
@@ -64,9 +89,43 @@ h2 {
   padding: 1rem;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+footer .socialmedia {
+  display: flex;
+  gap: 0.75rem;
+  flex: 0 1 auto;
+}
+
+footer .socialmedia a {
+  display: inline-flex;
+}
+
+footer .socialmedia img {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
 section {
   margin: 0;
   padding: 0;
+}
+
+section + section {
+  margin-top: 1rem;
 }
 
 /* Classes */
@@ -101,4 +160,65 @@ section {
   text-align: center;
   background-color: rgba(128, 0, 0, 0.70);
   color: var(--accent2-color);
+}
+
+.history {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.history h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 0;
+}
+
+.history p,
+.history img {
+  margin: 0;
+  width: 100%;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.adventure h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.adventure figure {
+  margin: 0;
+}
+
+.adventure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.adventure figure {
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  background: rgba(128, 0, 0, 0.08);
+  border-radius: 0.5rem;
+}
+
+.adventure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.adventure figure img {
+  border-radius: 0.5rem;
 }
