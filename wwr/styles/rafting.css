@@ -751,15 +751,3 @@ main {
   color: var(--accent2-color);
   margin: 0;
 }
-
-.index-hero {
-  position: relative;
-  margin-bottom: 1rem;
-  z-index: 1;
-}
-
-.index-hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
