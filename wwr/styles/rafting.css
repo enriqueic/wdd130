@@ -6,9 +6,9 @@
 
 :root {
   --primary-color: beige;
-  --secondary-color: darkred;
+  --secondary-color: darkgray;
   --accent1-color: maroon;
-  --accent2-color: beige;
+  --accent2-color: white;
   --heading-font: "Georgia", "Times New Roman", serif;
   --body-font: Helvetica, Arial, sans-serif;
 }
@@ -59,7 +59,8 @@ h2 {
   display: block;
   width: 840px;
   text-align: center;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
   padding: 1rem;
 }
 
@@ -99,5 +100,5 @@ section {
   margin: 0;
   text-align: center;
   background-color: rgba(128, 0, 0, 0.70);
-  color: #fff;
+  color: var(--accent2-color);
 }
