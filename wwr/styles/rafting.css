@@ -316,7 +316,7 @@ body.contact-page .contact-form {
   box-shadow: 0 8px 24px rgba(20, 20, 20, 0.06);
   border-radius: 12px;
   padding: 1.25rem;
-  color: var(--secondary-color);
+  color: black;
 }
 
 body.contact-page .contact-form fieldset {
