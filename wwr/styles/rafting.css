@@ -69,17 +69,6 @@ footer {
   margin: 0 auto;
 }
 
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-
-}
-
 h2 {
   display: block;
   width: 840px;
@@ -207,7 +196,7 @@ section + section {
   padding: 0.75rem 0.5rem;
   background: var(--primary-color);
   border-radius: 0.5rem;
-  border: solid 1px rgba(0, 0, 0, 0.50);
+  border: solid 1px var(--secondary-color);
 }
 
 .adventure figcaption {
@@ -219,4 +208,248 @@ section + section {
 
 .adventure figure img {
   border-radius: 0.5rem;
+}
+
+#hero-title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+}
+
+body.contact-page {
+  min-height: 100vh;
+}
+
+body.contact-page .site-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--primary-color);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+body.contact-page .site-header .logo img {
+  display: block;
+  width: 110px;
+  height: auto;
+}
+
+body.contact-page .site-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.contact-page .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  background: var(--accent2-color);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 0.75rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+body.contact-page main {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+body.contact-page .contact-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.contact-page .contact-intro h1 {
+  font-size: clamp(2rem, 2.5vw, 2.75rem);
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+body.contact-page .contact-intro address {
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
+body.contact-page .contact-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.2fr) minmax(320px, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+body.contact-page .map-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+body.contact-page .map-card iframe,
+body.contact-page .map-card .map-embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  z-index: 1;
+}
+
+body.contact-page .contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(20, 20, 20, 0.06);
+  border-radius: 12px;
+  padding: 1.25rem;
+  color: var(--secondary-color);
+}
+
+body.contact-page .contact-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body.contact-page .contact-form legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+body.contact-page .contact-form label {
+  display: block;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+body.contact-page .contact-form input[type="text"],
+body.contact-page .contact-form input[type="email"],
+body.contact-page .contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(20, 20, 20, 0.08);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  margin-top: 0.35rem;
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+  color: var(--secondary-color);
+  font: inherit;
+}
+
+body.contact-page .contact-form ::placeholder {
+  color: #a8a8a8;
+}
+
+body.contact-page .contact-form input:focus,
+body.contact-page .contact-form textarea:focus {
+  outline: none;
+  border-color: rgba(128, 0, 0, 0.6);
+  box-shadow: 0 0 0 6px rgba(128, 0, 0, 0.06);
+}
+
+body.contact-page .radio-group,
+body.contact-page .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+body.contact-page .radio-group label,
+body.contact-page .checkbox-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+body.contact-page .contact-form input[type="radio"],
+body.contact-page .contact-form input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--accent1-color);
+}
+
+body.contact-page .contact-form button[type="submit"] {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--accent1-color), #600000);
+  color: var(--accent2-color);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(128, 0, 0, 0.16);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+body.contact-page .contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(128, 0, 0, 0.18);
+}
+
+body.contact-page .team-section {
+  background: var(--accent2-color);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+body.contact-page .team-section h2 {
+  display: block;
+  box-sizing: border-box;
+  /* extend the heading to cover the parent's full content width (includes parent's 1.5rem padding each side) */
+  width: calc(100% + 3rem);
+  margin: 0 -1.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  color: var(--accent2-color);
+}
+
+body.contact-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+body.contact-page .team-grid figure {
+  background: var(--primary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.contact-page .team-photo {
+  width: 100%;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+body.contact-page .team-grid figcaption {
+  font-weight: 700;
+  color: var(--secondary-color);
 }

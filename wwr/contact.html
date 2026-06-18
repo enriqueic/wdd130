@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <title>Contact Us</title>
+</head>
+
+<body class="contact-page">
+  <header>
+    <picture class="logo">
+      <img src="images/rafting-logo-small.webp" alt="Company logo">
+    </picture>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-intro">
+      <h1>White Water Rafting Company</h1>
+      <address>
+        123 Main River Street<br>
+        Kolob, California<br>
+        +1 999 999 9999<br>
+        <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+      </address>
+    </section>
+
+    <section class="contact-layout">
+      <div class="map-card" aria-label="Map showing rafting company location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6512733.131981885!2d-124.5988976998478!3d37.15161820246821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s123%20Main%20River%20Street%20Kolob%2C%20California!5e0!3m2!1sen!2sng!4v1781398321029!5m2!1sen!2sng"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <form action="#" method="post" class="contact-form">
+        <fieldset>
+          <legend>Contact Us</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@example.com" required>
+
+          <div class="radio-group">
+            <span>Message Purpose</span>
+            <label><input type="radio" name="purpose" value="general-inquiry" required> General
+              Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation-question"> Reservation
+              Question</label>
+            <label><input type="radio" name="purpose" value="website-suggestion"> Website
+              Suggestion</label>
+          </div>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here"
+            required></textarea>
+
+          <label class="checkbox-group">
+            <input type="checkbox" name="subscribe">
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Get in Touch!</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="team-section">
+      <h2>We Are Here to Serve You</h2>
+      <div class="team-grid">
+        <figure>
+          <img class="team-photo" src="images/employee1.webp">
+          <figcaption>John Doe</figcaption>
+        </figure>
+        <figure>
+          <img class="team-photo" src="images/employee2.webp">
+          <figcaption>Richard Roe</figcaption>
+        </figure>
+        <figure>
+          <img class="team-photo" src="images/employee3.webp">
+          <figcaption>Jane Poe</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 White Water Rafting Company</p>
+    <div class="socialmedia">
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
