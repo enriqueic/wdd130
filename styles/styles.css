@@ -87,6 +87,10 @@ p {
     padding: var(--small-spacing)
 }
 
+li {
+    list-style: none;
+}
+
 picture {
     margin: var(--spacing);
     padding: 0.1rem;
